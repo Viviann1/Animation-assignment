@@ -1,0 +1,101 @@
+.box{
+    margin-top: 10px;
+    margin-left: 180px;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 255, 255, 0.7);
+    animation-name: changebg;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: absolute;
+
+}
+
+@keyframes changebg {
+0%{background-color:rgba(0, 255, 255, 0.3);}
+30%{background-color:rgba(0, 255, 255, 0.4);}
+60%{background-color:rgba(163, 223, 25, 0.5);}
+90%{background-color:rgba(157, 59, 56, 0.6);}
+100%{background-color:rgba(45, 46, 117, 0.7);}
+
+}
+
+
+.littlebox {
+width: 480px;
+height: 100px;
+background-color: rgba(90, 99, 54, 0.46);;
+padding-left: 10px;
+padding-bottom: 15px;
+margin-top: 320px;
+animation-name: littlebox;
+animation-duration: 15s;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-delay: 2s;
+position: absolute;
+}
+
+@keyframes littlebox {
+    0% {
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+    50% {
+        transform: scaleX(60);
+    }
+    100% {
+        transform: scaleX(120);
+    }
+}
+
+
+body {
+
+background-image: url(https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80);
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center center;
+}
+
+h1 {
+font-size: 180px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+margin-top: 120px;
+margin-left: 200px;
+color: rgb(214, 237, 237);
+opacity: 80%;
+position: absolute;
+}
+h2 {
+font-size: 100px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color: azure;
+opacity: 50%;
+margin-left: 50px;
+margin-top: 310px;
+position: absolute;
+}
+
+p {
+font-size: 18px;
+color: azure;
+position: absolute;
+font-family: 'Courier New', Courier, monospace;
+margin-left: 180px;
+margin-top: 460px;
+
+}
+
+.grey{
+    width: 310px;
+    height: 190px;
+    background-color: rgba(63, 63, 69, 0.5);
+    animation: blink 1s infinite;
+    animation-name: greybox;
+
+}
+
+@keyframes greybox{
+    0%{ background-color:rgba(81, 98, 39, 0.5); } 100%{ background-color:rgba(39, 53, 53, 0.3);} }
